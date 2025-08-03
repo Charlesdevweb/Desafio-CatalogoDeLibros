@@ -22,27 +22,27 @@ Proyecto desarrollado como parte del programa **Oracle ONE - Alura Latam**.
 
 ## 🧪 Tecnologías usadas
 
-- Java 17  
+- Java 23
 - Spring Boot  
 - Spring Data JPA  
 - Hibernate  
 - Jackson (para deserializar JSON)  
 - API externa: [Gutendex](https://gutendex.com)  
-- H2 o MySQL como base de datos
+- PostgresSQL como base de datos
 
 ---
 
 ## 🧭 Menú principal (vista en consola)
 
 ```
-🌐 LITERALURA - Catálogo de libros
+🌐 - Catálogo de libros
 ----------------------------------
 1. Buscar libro por título
 2. Listar libros registrados
 3. Listar autores registrados
 4. Listar autores vivos en un año específico
 5. Listar libros por idioma
-6. Salir
+0. Salir
 Seleccione una opción:
 ```
 
@@ -55,9 +55,8 @@ com.alura.literalura
 │
 ├── model         → Entidades JPA (Libro, Autor)
 ├── repository    → Interfaces JPA (LibroRepository, AutorRepository)
-├── principal     → Clase con método main y lógica del menú
+├── principal     → Clase main y lógica del menú que enlaza a la Clse app con metodo main,
 ├── service       → Lógica para consumir la API Gutendex
-└── dto           → Clases para deserializar el JSON
 ```
 
 ---
@@ -129,8 +128,9 @@ spring.jpa.show-sql=true
 3. Escribe un título conocido como: `Don Quijote`.
 4. Verifica que el libro se guarda correctamente.
 5. Usa la opción 2 para ver todos los libros.
-6. Usa la opción 4 e ingresa el año `1605` para ver si el autor estaba vivo en ese año.
-7. Usa la opción 5 e ingresa `es` (idioma español) para filtrar libros.
+6. Usa la opción 3 para ver los autores.
+7. Usa la opción 4 e ingresa el año `1605` para ver si el autor estaba vivo en ese año.
+8. Usa la opción 5 e ingresa `es` (idioma español) para filtrar libros.
 
 ---
 
@@ -147,4 +147,4 @@ spring.jpa.show-sql=true
 
 ## 🙋 Autor
 
-Desarrollado por **[Tu nombre aquí]** como parte del curso **Back-End Java con Spring Boot** - Oracle ONE + Alura Latam.
+Desarrollado por **[Carlos Rivera]** como parte del curso **Back-End Java con Spring Boot** - Oracle ONE + Alura Latam.
