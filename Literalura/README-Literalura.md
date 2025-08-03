@@ -147,4 +147,4 @@ spring.jpa.show-sql=true
 
 ## 🙋 Autor
 
-Desarrollado por **[Carlos Rivera]** como parte del curso **Back-End Java con Spring Boot** - Oracle ONE + Alura Latam.
+Desarrollado por **Carlos Rivera** como parte del curso **Back-End Java con Spring Boot** - Oracle ONE + Alura Latam.
